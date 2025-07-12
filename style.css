@@ -1,1 +1,61 @@
+html{
+    .grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+.grenze-extrabold {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.grenze-black {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    .grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grenze-extrabold {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.grenze-black {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}.grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grenze-extrabold {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.grenze-black {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: normal;
+}
