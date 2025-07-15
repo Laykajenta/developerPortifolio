@@ -1,126 +1,211 @@
-html{
-    
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 }
 
-
-body{
+body {
     margin: 0;
     min-height: 100vh;
     padding: 0;
     overflow-x: hidden;
-    height: auto ;
-    background-color: rgb(22,22,22);
-   
-    font-family: grenze, serif ;
+    height: auto;
+    background-color: #5a4b4b;
+
+    font-family: grenze, serif;
 }
 
-section{
+section {
     min-height: 100vh;
 }
+
+.section-title h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    color: #CDB773;
+}
+
 .grenze-bold {
-  font-family: "Grenze", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Grenze", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .grenze-extrabold {
-  font-family: "Grenze", serif;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Grenze", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .grenze-black {
-  font-family: "Grenze", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Grenze", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 /* home section ----------------------------- */
-#home{
+#home {
     display: grid;
     place-items: center;
-   
 }
-.slideshow{
+
+.slideshow {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: relative;
-
 }
-.slideshow::after{
-    content: '';
+
+.slideshow::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     pointer-events: none;
 }
-.slide{
+
+.slide {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-   top: 0  ;
+    top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 2s ease-in-out;
-   
 }
-.slideshow img.active{
+
+.slideshow img.active {
     opacity: 1;
-    
 }
+
 /* title--------------- */
-.page-title{
+.page-title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
     color: white;
 }
-.page-title h1{
+
+.page-title h1 {
     font-size: 5rem;
     font-weight: 900;
-   color: rgb(224, 204, 166);
+    color: rgb(224, 204, 166);
 }
 
 /* scroll-down animation */
-.mouse{
+.mouse {
     position: absolute;
     bottom: 20px;
     width: 45px;
     height: 89px;
     border-radius: 60px;
     border: 5px solid wheat;
-
-    
 }
-.mouse::before{
-    content: '';
+
+.mouse::before {
+    content: "";
     width: 12px;
     height: 12px;
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: wheat ;
+    background-color: wheat;
     border-radius: 50%;
-    opacity: 1  ;
+    opacity: 1;
     animation: wheelAnimation 2s infinite;
 }
-@keyframes wheelAnimation{
-    to{
-        opacity: 0  ;
+
+@keyframes wheelAnimation {
+    to {
+        opacity: 0;
         top: 60px;
     }
-   
+}
+
+/* about section ----------------------------- */
+
+
+.about-container {
+    display: grid;
+    place-items: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    color: #F4EBF0;
+    width: 50vw;
+    background-color: #A5A58D;
+
+}
+
+.box1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.box2 {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.box3 {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.box4 {
+    grid-area: 4 / 1 / 6 / 2;
+}
+
+.box5 {
+    grid-area: 4 / 2 / 6 / 3;
+}
+
+.box6 {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+-about-grid div {
+    background-color: #A5A58D;
+    display: grid;
+    place-items: center;
+    line-height: 1.5;
+}
+
+.text-box {
+    box-sizing: border-box;
+    width: 75ch;
+    padding: 70px;
+}
+
+.icon-box {
+    padding: 20%;
+    text-align: center;
+    color: black;
+}
+.icon-box i{
+    font-size: 50px;
+}
+
+.icon-box:nth-child(2){
+    background: #CB997E;
+
+}
+.icon-box:nth-child(3){
+    background: #DDBEA9;
+
+}.icon-box:nth-child(4){
+    background: #FFE8D6;
+
+}.icon-box:nth-child(5){
+    background: #B7B7A4;
+
 }
