@@ -22,3 +22,14 @@ function switchImage() {
     images[currentImageIndex].classList.add('active');
 }
 setInterval(switchImage, 5000);
+//Banner --------------
+const bannerContent = document.querySelector('.bannerContent');
+let messageHTML = 'span class = "contact-message">Contact us at m@laykajenta.no for more information</span>';
+let repetedMessage = messageHTML.repeat(10);
+
+//set repeated message as content
+bannerContent.innerHTML = repetedMessage + repetedMessage;
+
+function
+
+
