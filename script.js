@@ -23,13 +23,12 @@ function switchImage() {
 }
 setInterval(switchImage, 5000);
 //Banner --------------
-const bannerContent = document.querySelector('.bannerContent');
-let messageHTML = 'span class = "contact-message">Contact us at m@laykajenta.no for more information</span>';
-let repetedMessage = messageHTML.repeat(10);
+
+const bannerContent = document.getElementById('bannerContent');
+let messageHTML = '<span class="contact-message">Contact us at email@example.com - We\'re here to help!</span>';
+let repeatedMessage = messageHTML.repeat(10); // Create a string with the message repeated 10 times
 
 //set repeated message as content
-bannerContent.innerHTML = repetedMessage + repetedMessage;
-
-function
+bannerContent.innerHTML = repeatedMessage + repeatedMessage; // Duplicate for infinite scrolling
 
 
