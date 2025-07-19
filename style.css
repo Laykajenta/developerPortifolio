@@ -283,3 +283,47 @@ background: radial-gradient(circle, rgba(165, 165, 141, 1) 0%, rgba(184, 164, 15
     height: 100vh;
     position: relative;
 }
+.banner-link{
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: rgb(234, 199, 135);
+}
+ .banner{
+    position: absolute;
+    left: 0;
+    bottom: 500%;
+    widows: 100vw;
+    height: 50px;
+    background-color: rgb(124, 123, 158);
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transform-origin: 0 100;
+    display: flex;
+    align-items: center;
+ }
+ .banner-content{
+    white-space: nowrap;
+    display: inline-block;
+   animation: scrollBanner 60s linear infinite;
+   transition: font-size 0.3s ease-in-out;
+   font-size: 1rem;
+   &:hover {
+        font-size: 1.1rem;
+    }
+ }
+
+ @keyframes scrollBanner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    
+ }
+  .contact-message {
+    margin-right: 20px;
+ }
