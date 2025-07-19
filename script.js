@@ -25,7 +25,7 @@ setInterval(switchImage, 5000);
 //Banner --------------
 
 const bannerContent = document.getElementById('bannerContent');
-let messageHTML = '<span class="contact-message">Contact us at email@example.com - We\'re here to help!</span>';
+let messageHTML = '<span class="contact-message">Contact us at email@example.com -   We\'re here to help!  </span>';
 let repeatedMessage = messageHTML.repeat(10); // Create a string with the message repeated 10 times
 
 //set repeated message as content
